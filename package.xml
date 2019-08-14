@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<package>
+    <name>SyncwithSalesforceCrm</name>
+    <version>1.0</version>
+    <stability>stable</stability>
+    <license uri="http://www.opensource.org/licenses/osl-3.0.php">OSL v3.0</license>
+    <channel>community</channel>
+    <extends/>
+    <summary>This extension would post real time leads from magento to salesforce automatically. This extension also has the capability to transfer abandoned shopping carts from Magento to salesforce as opportunities which would allow your sales team to track the opportunity and convert to a sale. We also have a feature where once an opportunity is converted to a sale in salesforce, it can create an order in magento. Please contact us at 302-355-0449 begin_of_the_skype_highlighting&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;302-355-0449&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;end_of_the_skype_highlighting for further details or email me directly at info@thylaksoft.com and buyan@talktoaprogrammer.com for further information.</summary>
+    <description>SyncwithSalesforceCrm</description>
+    <notes>This extension would post real time leads from magento to salesforce automatically. This extension also has the capability to transfer abandoned shopping carts from Magento to salesforce as opportunities which would allow your sales team to track the opportunity and convert to a sale. We also have a feature where once an opportunity is converted to a sale in salesforce, it can create an order in magento. Please contact us at 302-355-0449 for further details or email me directly at info@thylaksoft.com and buyan@talktoaprogrammer.com for further information.</notes>
+    <authors><author><name>guru</name><user>auto-converted</user><email>guru@thylaksoft.com</email></author></authors>
+    <date>2010-06-28</date>
+    <time>13:17:51</time>
+    <contents><target name="magedesign"><dir name="adminhtml"><dir name="default"><dir name="default"><dir name="layout"><file name="magesalesforce.xml" hash="e08102c8316a2eb5820e2446b35adee3"/></dir><dir name="template"><dir name="magesalesforce"><file name="magesalesforce.phtml" hash="423bdc8f687291100793ce34e64bd405"/><file name="thanks.phtml" hash="25c26a885922c0f5f7c4ae2e2b0922ab"/></dir></dir></dir></dir></dir></target><target name="mageetc"><dir name="modules"><file name="Thylak_Magesalesforce.xml" hash="bbfb16827dc9800b7e8fe859cd11050b"/></dir></target><target name="magelocal"><dir name="Thylak"><dir name="Magesalesforce"><dir name="Block"><dir name="Adminhtml"><dir name="Magesalesforce"><file name="Magesalesforce.php" hash="ef1ba653b15b3e8cb215cf6072eeb431"/><file name="Thanks.php" hash="27d27d901eadd7d048b724e93a1b1496"/></dir></dir></dir><dir name="controllers"><dir name="Adminhtml"><file name="MagesalesforceController.php" hash="38b165e66c1adaa03e0a4907a61c1b39"/></dir></dir><dir name="etc"><file name="config.xml" hash="c47e944cc5e23173d5978f9c839660be"/></dir><dir name="Helper"><file name="Data.php" hash="df07dbd18479b1ff1592084b82891df3"/></dir><dir name="Model"><file name="Magesalesforce.php" hash="af839422e52473719bcd2063fef90d20"/></dir></dir></dir></target></contents>
+    <compatible/>
+    <dependencies/>
+</package>

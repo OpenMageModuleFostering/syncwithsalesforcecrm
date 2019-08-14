@@ -1,0 +1,69 @@
+<div class="content-header">
+    <table cellspacing="0">
+        <tr>
+            <td><h3><?php echo 'Magento To Salesforce CRM' ?></h3></td>
+        </tr>
+    </table>
+</div>
+<!--<div><strong>You're one step away from getting this extension. Please contact us to serve you better.<strong></div><br />-->
+<form name="magesalesforceform" id="magesalesforceform" method="post" action="<?php echo $this->getUrl('*/*/savemagesalesforce'); ?>"  enctype="multipart/form-data">
+<input name="form_key" type="hidden" value="<?php echo Mage::getSingleton('core/session')->getFormKey() ?>" />
+
+<div class="entry-edit" style="background-color:#6f8992;">
+	<h4 style="color:#ffffff;"><strong>Contact us for further information</strong></h4>
+</div>
+<div><strong>We have the extension already built and would like to show you a demo of the product to suit your needs. So please enter your contact information below.</strong></div><br />
+<div class="fieldset " id="base_fieldset">
+	<div class="hor-scroll">
+    	<table cellspacing="0" class="form-list" style="background-color:#fafafa;">
+        	<tbody>
+            	<tr>
+        			<td class="label"><label for="firstname"><?php echo Mage::helper('adminhtml')->__('Enter First Name') ?><span style="color:#d40707;">*</span></label></td>
+					<td class="value"><input type="text" id="firstname" name="firstname" value="" class="required-entry input-text" /></td>
+				</tr>
+            	<tr>
+        			<td class="label"><label for="lastname"><?php echo Mage::helper('adminhtml')->__('Enter Last Name') ?></label></td>
+					<td class="value"><input type="text" id="lastname" name="lastname" value="" class="input-text" /></td>
+				</tr>
+            	<tr>
+        			<td class="label"><label for="email"><?php echo Mage::helper('adminhtml')->__('Enter Email Id') ?><span style="color:#d40707;">*</span></label></td>
+					<td class="value"><input type="text" id="email" name="email" value="" class="required-entry input-text validate-email" /></td>
+				</tr>
+            	<tr>
+        			<td class="label"><label for="company"><?php echo Mage::helper('adminhtml')->__('Enter Company Name') ?><span style="color:#d40707;">*</span></label></td>
+					<td class="value"><input type="text" id="company" name="company" value="" class="required-entry input-text" /></td>
+				</tr>				
+            	<tr>
+        			<td class="label"><label for="phoneno"><?php echo Mage::helper('adminhtml')->__('Enter Phone Number') ?><span style="color:#d40707;">*</span></label></td>
+					<td class="value"><input type="text" id="phoneno" name="phoneno" value="" class="required-entry input-text" /></td>
+				</tr>
+            	<tr>
+        			<td class="label"><label for="productversion"><?php echo Mage::helper('adminhtml')->__('What version of salesforce do you use?') ?><span style="color:#d40707;">*</span></label></td>
+					<td class="value"><input type="text" id="productversion" name="productversion" value="" class="required-entry input-text" /></td>
+				</tr>	
+	           	<tr>
+        			<td class="label"><label for="description"><?php echo Mage::helper('adminhtml')->__('Could you please tell me a few words about yourself, your role in your company and what your company does?') ?><span style="color:#d40707;">*</span></label></td>
+					<td class="value">
+					<textarea id="description" name="description" class="required-entry" ></textarea></td>
+				</tr>	
+            	<tr>
+        			<td class="label"><label for="timetotalk"><?php echo Mage::helper('adminhtml')->__('What is the best time and number to get in touch with you?') ?><span style="color:#d40707;">*</span></label></td>
+					<td class="value"><input type="text" id="timetotalk" name="timetotalk" value="" class="required-entry input-text" /></td>
+				</tr>																			
+				<tr>
+				<td colspan = "2" align="right"> 
+				<div class="form-buttons"><input type="submit" id="magetosalesforce" name = "magetosalesforce" class="form-button" value="<?php echo 'Submit' ?>" title="<?php echo ' Submit' ?>" /></div>
+				</td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+</div>
+</form>
+
+<script type="text/javascript">
+	 var magesalesforceform = new varienForm('magesalesforceform');
+</script>
+
+
+

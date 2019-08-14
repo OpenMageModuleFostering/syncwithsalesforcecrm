@@ -1,0 +1,96 @@
+<?xml version="1.0"?>
+
+<!-- Config file -->
+
+<config>
+    <modules>
+        <Thylak_Magesalesforce>
+            <version>0.1.0</version>
+        </Thylak_Magesalesforce>
+    </modules>
+    <admin>
+        <routers>
+			<magesalesforce>
+				<use>admin</use>
+				<args>
+					<module>Thylak_Magesalesforce</module>
+					<frontName>magesalesforce</frontName>
+				</args>
+			</magesalesforce>
+        </routers>
+    </admin>
+    <adminhtml>
+		<menu>
+			<magesalesforce module="magesalesforce">
+				<title>Salesforce CRM</title>
+				<sort_order>71</sort_order>               
+				<children>
+                    <items module="magesalesforce">
+                        <title>Magento to Salesforce CRM</title>
+                        <action>magesalesforce/adminhtml_magesalesforce/index</action>
+                        <sort_order>20</sort_order>
+                    </items>                    
+				</children>
+			</magesalesforce>
+		</menu>
+		<acl>
+			<resources>
+				<all>
+					<title>Allow Everything</title>
+				</all>
+				<admin>
+					<children>
+						<Thylak_Magesalesforce>
+							<title>Magesalesforce Module</title>
+							<sort_order>10</sort_order>
+						</Thylak_Magesalesforce>
+					</children>
+				</admin>
+			</resources>
+		</acl>
+		<layout>
+			<updates>
+				<magesalesforce>
+					<file>magesalesforce.xml</file>
+				</magesalesforce>
+			</updates>
+		</layout>
+    </adminhtml>   
+    <global>
+        <resources>
+            <magesalesforce_setup>
+                <setup>
+                    <module>Thylak_Magesalesforce</module>
+                </setup>
+                <connection>
+                    <use>core_setup</use>
+                </connection>
+            </magesalesforce_setup>
+            <magesalesforce_write>
+                <connection>
+                    <use>core_write</use>
+                </connection>
+            </magesalesforce_write>
+            <magesalesforce_read>
+                <connection>
+                    <use>core_read</use>
+                </connection>
+            </magesalesforce_read>
+        </resources>
+        <models>
+            <magesalesforce>
+                <class>Thylak_Magesalesforce_Model</class>
+            </magesalesforce>
+        </models>        
+        <blocks>
+            <magesalesforce>
+                <class>Thylak_Magesalesforce_Block</class>
+            </magesalesforce>
+        </blocks>
+        <helpers>
+            <magesalesforce>
+                <class>Thylak_Magesalesforce_Helper</class>
+            </magesalesforce>
+        </helpers>
+    </global>
+</config>

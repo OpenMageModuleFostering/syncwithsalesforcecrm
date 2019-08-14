@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+
+<!-- This layout file is used to route the controller and actions -->
+
+<layout version="0.1.0">
+    <magesalesforce_adminhtml_magesalesforce_index>
+        <reference name="content">
+            <block type="magesalesforce/adminhtml_magesalesforce" name="magesalesforce" />
+        </reference>
+    </magesalesforce_adminhtml_magesalesforce_index>
+    <magesalesforce_adminhtml_magesalesforce_thanks>
+        <reference name="content">
+            <block type="magesalesforce/adminhtml_magesalesforce" name="magesalesforce_thanks" />
+        </reference>
+    </magesalesforce_adminhtml_magesalesforce_thanks>    
+</layout>
